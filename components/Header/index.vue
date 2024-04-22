@@ -12,9 +12,9 @@
           alt="avatar"
         />
         <div class="grid grid-rows-2 gap-1">
-          <span class="font-semibold">Quang Vu Huy</span>
+          <span class="font-bold">Quang Vu Huy</span>
           <div>
-            <span class="text-zinc-800">Lập trình viên</span>
+            <span class="text-slate-600 font-normal">Lập trình viên</span>
           </div>
         </div>
       </div>
@@ -23,16 +23,16 @@
           <NuxtLink to="/">TRANG CHỦ</NuxtLink>
         </li>
         <li class="hover:text-[#fdcb6e] transition delay-[45ms] text-navba">
-          <NuxtLink to="/about">BÀI VIẾT</NuxtLink>
+          <NuxtLink to="/bai-viet">BÀI VIẾT</NuxtLink>
         </li>
         <li class="hover:text-[#fdcb6e] transition delay-[45ms] text-navba">
-          <NuxtLink to="/product/123">LIÊN HỆ</NuxtLink>
+          <NuxtLink to="/lien-he">LIÊN HỆ</NuxtLink>
         </li>
       </ul>
     </nav>
   </header>
 </template>
 
-<script setup></script>
+<script lang="ts" setup></script>
 
 <style scoped src="./styles.css"></style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    Trang chủ
+    Bài viết
   </div>
 </template>
 

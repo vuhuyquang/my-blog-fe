@@ -1,6 +1,6 @@
 <template>
   <div>
-    Trang chủ
+    Liên hệ
   </div>
 </template>
 
