@@ -1,7 +1,7 @@
 <template>
   <header class="drop-shadow-xl bg-white text-[14px] text-[black]">
     <nav
-      class="container mx-auto px-5 h-[76px] flex justify-between items-center"
+      class="container mx-auto px-5 h-[76px] flex justify-between items-center cursor-pointer"
     >
       <div class="grid grid-flow-col auto-cols-max gap-2">
         <img
@@ -13,8 +13,12 @@
         />
         <div class="grid grid-rows-2 gap-1">
           <span class="font-bold">Quang Vu Huy</span>
-          <div>
-            <span class="text-slate-600 font-normal">Lập trình viên</span>
+          <div class="flex items-center gap-1">
+            <span class="text-slate-700 font-normal">Lập trình viên</span>
+            <span class="flex items-center">
+              <CaretDownOutlined :style="{fontSize: '10px'}" />
+            </span>
+            <span class="ml-1 text-slate-500">Theo dõi</span>
           </div>
         </div>
       </div>
