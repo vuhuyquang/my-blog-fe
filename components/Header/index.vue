@@ -1,5 +1,5 @@
 <template>
-  <header class="drop-shadow-xl bg-white text-[14px] text-[black]">
+  <header class="fixed top-0 right-0 left-0 z-1030 drop-shadow-xl bg-white text-[14px] text-[black]">
     <nav class="container mx-auto px-5 h-[76px] flex justify-between items-center cursor-pointer">
       <div class="grid grid-flow-col auto-cols-max gap-2">
         <img class="border-solid border-2 border-[#e84118] p-[1px] rounded-full" height="44" width="44"
@@ -30,7 +30,7 @@
               </template>
 
               <span class="text-slate-700 font-normal">Lập trình viên</span>
-              <span class="flex items-center">
+              <span class="flex items-center ml-[3px]">
                 <CaretDownOutlined :style="{ fontSize: '10px' }" />
               </span>
             </a-popover>

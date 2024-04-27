@@ -8,5 +8,8 @@ export default defineNuxtConfig({
     '@ant-design-vue/nuxt',
     '@nuxtjs/tailwindcss',
   ],
-  devtools: { enabled: false }
+  devtools: { enabled: false },
+  css: [
+    '~/assets/css/main.css'
+  ]
 })
