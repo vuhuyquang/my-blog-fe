@@ -1,6 +1,6 @@
 <template>
   <header class="fixed top-0 right-0 left-0 z-1030 drop-shadow-xl bg-white text-[14px] text-[black]">
-    <nav class="container mx-auto px-5 h-[76px] flex justify-between items-center cursor-pointer">
+    <nav class="px-5 h-[76px] flex justify-between items-center cursor-pointer">
       <div class="grid grid-flow-col auto-cols-max gap-2">
         <img class="border-solid border-2 border-[#e84118] p-[1px] rounded-full" height="44" width="44"
           src="https://mir-s3-cdn-cf.behance.net/user/50/1148755320017.617fd8ae2afe4.jpg" alt="avatar" />
