@@ -1,22 +1,38 @@
 <template>
-  <div class="grid grid-rows-2 gap-[80px] bg-black mt-[5rem] text-white py-[5rem] px-[300px]">
-    <div class="flex justify-between">
-      <div>
+  <div class="grid grid-rows-2 gap-[80px] bg-black mt-[5rem] text-white pt-[8rem] px-[100px] font-custom">
+    <div class="grid grid-cols-4">
+      <div class="flex flex-col gap-5">
         <h2>GIỚI THIỆU</h2>
+        <p class="text-gray-300">Là lập trình viên website app, blogger và là Founder của Quag.</p>
       </div>
-      <div>
+      <div class="flex flex-col gap-5">
         <h2>THÔNG TIN</h2>
+        <ul class="text-gray-300 space-y-4">
+          <li>Chính sách</li>
+          <li>Điều khoản</li>
+        </ul>
       </div>
-      <div>
+      <div class="flex flex-col gap-5">
         <h2>ĐƯỜNG DẪN</h2>
+        <ul class="text-gray-300 space-y-4">
+          <li><NuxtLink to="/">Trang chủ</NuxtLink></li>
+          <li><NuxtLink to="/bai-viet">Bài viết</NuxtLink></li>
+          <li><NuxtLink to="/lien-he">Liên hệ</NuxtLink></li>
+        </ul>
       </div>
-      <div>
+      <div class="flex flex-col gap-5">
         <h2>BẠN CÓ CÂU HỎI?</h2>
+        <ul class="text-gray-300 space-y-4">
+          <li>Thanh Xuân, Hà Nội</li>
+          <li>+84 34 439 6798</li>
+          <li>quangvh.technical@gmail.com</li>
+        </ul>
       </div>
     </div>
-    <div class="flex justify-center">Copyright © 2023 All rights reserved | Made by Quang Vu Huy</div>
+    <div class="flex justify-center text-gray-400">Copyright © 2023 All rights reserved | Made by Quang Vu Huy</div>
   </div>
 </template>
 
-<script lang="ts" setup>
-</script>
+<script lang="ts" setup></script>
+
+<style scoped src="./styles.css"></style>
