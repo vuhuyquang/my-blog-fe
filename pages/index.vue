@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-24">
+  <div class="space-y-60">
     <Banner />
     <Introduce />
     <Service />
