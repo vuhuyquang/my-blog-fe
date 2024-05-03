@@ -41,25 +41,41 @@
       <div class="font-semibold tracking-[2px]">
         <div class="hidden sm:hidden md:hidden lg:flex">
           <ul class="flex gap-[2rem]">
-            <li class="hover:text-[#fdcb6e] transition delay-[45ms] text-navba">
+            <li class="hover:text-[#fdcb6e] transition delay-[45ms]">
               <NuxtLink to="/">TRANG CHỦ</NuxtLink>
             </li>
-            <li class="hover:text-[#fdcb6e] transition delay-[45ms] text-navba">
+            <li class="hover:text-[#fdcb6e] transition delay-[45ms]">
               <NuxtLink to="/bai-viet">BÀI VIẾT</NuxtLink>
             </li>
-            <li class="hover:text-[#fdcb6e] transition delay-[45ms] text-navba">
+            <li class="hover:text-[#fdcb6e] transition delay-[45ms]">
               <NuxtLink to="/lien-he">LIÊN HỆ</NuxtLink>
             </li>
           </ul>
         </div>
         <div class="lg:hidden flex items-center">
-          <MenuOutlined class="text-base" />
+          <MenuOutlined @click="showDrawer" class="text-base" />
         </div>
       </div>
     </nav>
   </header>
+
+  <a-drawer v-model:open="open" title="ĐƯỜNG DẪN" class="text-dark cursor-pointer">
+    <ul class="flex flex-col mt-4 font-medium">
+      <li class="py-2 px-4 hover:bg-gray-100 rounded"><NuxtLink to="/">TRANG CHỦ</NuxtLink></li>
+      <li class="py-2 px-4 hover:bg-gray-100 rounded"><NuxtLink to="/bai-viet">BÀI VIẾT</NuxtLink></li>
+      <li class="py-2 px-4 hover:bg-gray-100 rounded"><NuxtLink to="/lien-he">LIÊN HỆ</NuxtLink></li>
+    </ul>
+  </a-drawer>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const open = ref<boolean>(false)
+
+const showDrawer = () => {
+  open.value = true
+}
+</script>
 
 <style scoped src="./styles.css"></style>
