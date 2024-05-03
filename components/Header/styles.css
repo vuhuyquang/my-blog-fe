@@ -1,9 +1,0 @@
-.z-1030 {
-  z-index: 1030;
-}
-
-header {
-  width: 100%; /* Đảm bảo rằng header chiếm toàn bộ chiều rộng của màn hình */
-  padding-left: 1rem; /* Padding bên trái */
-  padding-right: 1rem; /* Padding bên phải */
-}

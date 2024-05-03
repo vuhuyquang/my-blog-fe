@@ -1,6 +1,6 @@
 <template>
-  <div class="grid grid-rows-2 gap-[80px] bg-black mt-[5rem] text-white pt-[8rem] px-[100px] font-custom">
-    <div class="grid grid-cols-4">
+  <div class="grid grid-rows-2 gap-[80px] bg-black mt-[5rem] text-white pt-[8rem] px-[100px] px-custom font-custom">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
       <div class="flex flex-col gap-5">
         <h2>GIỚI THIỆU</h2>
         <p class="text-gray-300">Là lập trình viên website app, blogger và là Founder của Quag.</p>
