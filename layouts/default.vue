@@ -2,7 +2,7 @@
   <div class="space-y-60">
     <Header />
     
-    <main class="container w-screen max-w-full content-custom">
+    <main class="container mx-auto w-screen max-w-full content-custom">
       <NuxtPage />
     </main>
     

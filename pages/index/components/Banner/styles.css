@@ -18,3 +18,7 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
 }
+
+.h-screen-minus-header {
+  height: calc(100vh - 76px);
+}
