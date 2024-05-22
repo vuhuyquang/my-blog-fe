@@ -2,8 +2,8 @@
   <header class="fixed top-0 right-0 left-0 z-1030 drop-shadow-xl bg-white text-[14px] text-[black]">
     <nav class="px-5 h-[76px] flex justify-between items-center cursor-pointer">
       <div class="grid grid-flow-col auto-cols-max gap-2">
-        <img class="border-solid border-2 border-[#e84118] p-[1px] rounded-full" height="44" width="44"
-          src="https://mir-s3-cdn-cf.behance.net/user/50/1148755320017.617fd8ae2afe4.jpg" alt="avatar" />
+        <img class="border-solid border-2 border-[#e84118] p-[1px] rounded-full h-[44px] w-[44px]" height="44" width="44"
+          src="https://cache.giaohangtietkiem.vn/d/a0181819bd2da9ba11508583a25f3db5.png?width=44" alt="avatar" />
         <div class="grid grid-rows-2 gap-1">
           <span class="font-bold">Quang Vu Huy</span>
           <div class="flex items-center gap-1">
@@ -61,9 +61,9 @@
 
   <a-drawer v-model:open="open" title="ĐƯỜNG DẪN" class="text-dark cursor-pointer">
     <ul class="flex flex-col mt-4 font-medium">
-      <li class="py-2 px-4 hover:bg-gray-100 rounded"><NuxtLink to="/">TRANG CHỦ</NuxtLink></li>
-      <li class="py-2 px-4 hover:bg-gray-100 rounded"><NuxtLink to="/bai-viet">BÀI VIẾT</NuxtLink></li>
-      <li class="py-2 px-4 hover:bg-gray-100 rounded"><NuxtLink to="/lien-he">LIÊN HỆ</NuxtLink></li>
+      <li @click="hideDrawer" class="py-2 px-4 hover:bg-gray-100 rounded"><NuxtLink to="/">TRANG CHỦ</NuxtLink></li>
+      <li @click="hideDrawer" class="py-2 px-4 hover:bg-gray-100 rounded"><NuxtLink to="/bai-viet">BÀI VIẾT</NuxtLink></li>
+      <li @click="hideDrawer" class="py-2 px-4 hover:bg-gray-100 rounded"><NuxtLink to="/lien-he">LIÊN HỆ</NuxtLink></li>
     </ul>
   </a-drawer>
 </template>
@@ -75,6 +75,10 @@ const open = ref<boolean>(false)
 
 const showDrawer = () => {
   open.value = true
+}
+
+const hideDrawer = () => {
+  open.value = false
 }
 </script>
 
